@@ -1,8 +1,7 @@
-# DICE
-## Design, Interpret, Compute, Experiment
+# DICE (Design, Interpret, Compute, Experiment)
+## An interactvity tool to teach and statistics in epidemiological research
 
-The aim of the DICE activity is to apply statistical reasoning to all stages of planning and designing a study.
-There are no limits to creativity. You can either replicate existing studies from the literature or think about studies that you would like to conduct. Be as realistic as possible and think about the details of the study. The focus lies be on the conceptual thinking and trying to deeply appreciate the contribution of statistical reasoning.
+The aim of the DICE activity is to apply statistical reasoning to all stages of planning and designing a study. There are no limits to creativity. You can either replicate existing studies from the literature or think about studies that you would like to conduct. Be as realistic as possible and think about the details of the study. The focus lies be on the conceptual thinking and trying to deeply appreciate the contribution of statistical reasoning.
 
 <img width="302" alt="image" src="https://user-images.githubusercontent.com/44569628/219855351-748e04cd-969c-4a5c-a521-f97a348e7a2b.png">
  
