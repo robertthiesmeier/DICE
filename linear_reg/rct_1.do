@@ -35,4 +35,4 @@ summarize
 
 // simulated power
 count if p < 0.05
-di "Simulated Power (%) = " r(N)/c(N)*100 
+di "Simulated Power (%) = " r(N)/c(N)*100
