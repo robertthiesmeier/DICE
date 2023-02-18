@@ -1,7 +1,6 @@
 # DICE
 ## Design, Interpret, Compute, Experiment
 
-**Aim of DICE**
 The aim of the DICE activity is to apply statistical reasoning to all stages of planning and designing a study.
 There are no limits to creativity. You can either replicate existing studies from the literature or think about studies that you would like to conduct. Be as realistic as possible and think about the details of the study. The focus lies be on the conceptual thinking and trying to deeply appreciate the contribution of statistical reasoning.
 
