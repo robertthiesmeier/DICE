@@ -28,7 +28,6 @@ end
 sim_lm 
 
 // Generate 1,000 studies
-
 simulate est_b  = r(est_b) est_se_b = r(est_se_b) p =r(p), reps(1000): sim_lm
 
 // describe the sampling distribution of the estimated effect
