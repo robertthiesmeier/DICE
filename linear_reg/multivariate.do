@@ -43,5 +43,3 @@ di "Simulated power of an independent effect of HA = " r(N)/c(N)*100 "%"
 
 count if p_com < 0.05
 di "Simulated power of a joint effect of PA and HA = " r(N)/c(N)*100 "%"
-
-
