@@ -1,4 +1,8 @@
-* Example of a propsective cohort study
+/**************************************************************
+Study design: 1-year cross sectional
+Outcome: Systolic Blood pressure
+Intervention: Air pollution
+***************************************************************/
 
 // Sample size calculation
 power oneslope 0 0.5, sdx(4.2) sderror(4.9)
