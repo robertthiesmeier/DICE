@@ -1,4 +1,9 @@
-* Example of a RCT 
+/**************************************************************
+Study design: RCT
+Outcome: BMI
+Intervention: Physical activity sessions
+Example of type II error
+***************************************************************/
 
 // sample size calculation 
 power twomeans 120 115, sd(10) n(170)
