@@ -1,3 +1,9 @@
+/**************************************************************
+Study design: Cohort
+Outcome: Waist circumference
+Intervention: Physical activity sessions + Nutrional status
+***************************************************************/
+
 clear all 
 set obs 5000
 set seed 20230223
