@@ -1,5 +1,7 @@
 /******************************************************************
 Study Design: RCT
+Outcome: Infectious disease 
+Intervention: Vaccination
 *******************************************************************/
 
 clear all
