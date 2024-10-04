@@ -1,5 +1,5 @@
 # A simulation-based approach to teach biostatistics in health sciences
-We use simulations to teach statistics :chart_with_downwards_trend: in a medical context :hospital: 
+We use simulations to teach statistics :chart_with_downwards_trend: in a medical context :hospital:.
 A simulation-based approach to teach statistics in health sciences is described in these two papers:
 
 # DICE (Design, Interpret, Compute, Experiment) :game_die:
