@@ -14,8 +14,8 @@ How do we know that it works? We evaluated the approach in a 3-hour long worksho
 
 ![interaction](https://github.com/user-attachments/assets/e2a1910b-040b-414f-ad8c-8c7ea093a207)
 
-# Example 
-Let's go through a simple example: comapring expectations vs. theory. A longer description of the example is available [here]((https://www.tandfonline.com/doi/full/10.1080/09332480.2024.2348972). Let us create a function or program that allows us to generate data for a single study with two variables, X and Y. We are interested in the effect of X on Y. The true effect is quantified as the OR of X (OR=3.9). 
+# Simple example
+Let's go through a simple example: comapring expectations vs. theory. A longer description of the example is available [here](https://www.tandfonline.com/doi/full/10.1080/09332480.2024.2348972). Let us create a function or program that allows us to generate data for a single study with two variables, X and Y. We are interested in the effect of X on Y. The true effect is quantified as the OR of X (OR=3.9). 
 
 ```ruby
 
