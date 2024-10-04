@@ -14,6 +14,74 @@ How do we know that it works? We evaluated the approach in a 3-hour long worksho
 
 ![interaction](https://github.com/user-attachments/assets/e2a1910b-040b-414f-ad8c-8c7ea093a207)
 
+# Example 
+Let's go through a simple example: comapring expectations vs. theory. A longer description of the example is available [here]((https://www.tandfonline.com/doi/full/10.1080/09332480.2024.2348972). Let us create a function or program that allows us to generate data for a single study with two variables, X and Y. We are interested in the effect of X on Y. The true effect is quantified as the OR of X (OR=3.9). 
+
+```ruby
+
+capture program drop sim_exp1
+program define sim_exp1, rclass
+	drop _all 
+	local n = 1000
+	local py_1 = .3
+	local py_0 = .1
+	local x_p = .2
+	
+	qui set obs `n'
+	qui gen x = rbinomial(1, `x_p')
+	qui gen y = .
+	qui replace y = rbinomial(1, `py_1') if x == 1
+	qui replace y = rbinomial(1, `py_0') if x == 0
+
+	logit y x ,or
+	return scalar est_b = _b[x]
+	return scalar est_se_b = _se[x]
+end
+
+```
+
+When we call the program, we simulate the study once under the outlined mechanisms.
+
+```ruby
+
+sim_exp1 
+
+```
+
+We can replicate the same study a large number of times to start reasoning in terms of distributions.
+
+```ruby
+
+simulate est_b = r(est_b)  est_se_b = r(est_se_b) , seed(23016) reps(1000) : sim_exp1
+
+```
+
+We can now compare what we expected versus what we observed after replicating the same study many times.
+
+```ruby
+
+summarize  est_b
+di exp(r(mean))
+
+* Expected mean and std deviation
+di (60/140)/(80/720)
+di sqrt(1/60+1/140+1/80+1/720)
+
+scalar t_b = ln( (60/140)/(80/720) )
+scalar t_se_b = sqrt(1/60+1/140+1/80+1/720)
+di t_b+invnormal(.005)*t_se_b
+di t_b+invnormal(.995)*t_se_b
+di exp(t_b+invnormal(.005)*t_se_b)
+di exp(t_b+invnormal(.995)*t_se_b)
+summarize
+
+```
+
+We can visualise the sampling and theoretical distribution and see that the sampling distribution is approximately normal, centered around the mean of 3.9.
+
+![figure_1](https://github.com/user-attachments/assets/11904739-2966-457a-850d-5c1dbf731e05)
+
+
 ## References
 Thiesmeier, R. & Orsini, N. (2024). Rolling the DICE (Design, Interpret, Compute, Estimate): Interactive Learning of Biostatistics with Simulations.[JMIR].(https://mededu.jmir.org/2024/1/e52679/)
 
