@@ -96,8 +96,8 @@ twoway ///
 
 
 ## References
-Thiesmeier, R. & Orsini, N. (2024). Rolling the DICE (Design, Interpret, Compute, Estimate): Interactive Learning of Biostatistics with Simulations.[JMIR].(https://mededu.jmir.org/2024/1/e52679/)
+Thiesmeier, R. & Orsini, N. (2024). Rolling the DICE (Design, Interpret, Compute, Estimate): Interactive Learning of Biostatistics with Simulations.[JMIR](https://mededu.jmir.org/2024/1/e52679/)
 
 Orsini, N., Thiesmeier, R., & Båge, K. (2024). A Simulation-Based Approach to Teach Interaction Effects in Postgraduate Biostatistics Courses. [Journal of Statistics and Data Science Education](https://doi.org/10.1080/26939169.2024.2394536)
 
-Thiesmeier, R. & Orsini, N. (2024) Teaching Statistics in Health Sciences: The Potential of Simulations in Public Health. [Chance](https://www.tandfonline.com/doi/full/10.1080/09332480.2024.2348972).
+Thiesmeier, R. & Orsini, N. (2024) Teaching Statistics in Health Sciences: The Potential of Simulations in Public Health. [Chance](https://www.tandfonline.com/doi/full/10.1080/09332480.2024.2348972)
