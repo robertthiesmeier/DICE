@@ -79,6 +79,19 @@ summarize
 
 We can visualise the sampling and theoretical distribution and see that the sampling distribution is approximately normal, centered around the mean of 3.9.
 
+```ruby
+
+twoway ///
+   (function t_b = normalden(x, t_b, t_se_b), range(`=t_b-4*t_se_b' `=t_b+4*t_se_b') lwidth(thick) color(red%80)) ///
+   (hist est_b, bin(40) color(blue%20)) ///
+	, ytitle("Sampling Distribution") ylab(, nogrid) /// 
+	xtitle("Estimated odds ratio (log scale)") ///
+	legend(label(1 "Theoretical") label(2 "Simulated") ring(0) pos(1) col(1) region(style(none))) ///
+	xlabel(`=ln(3.86)' "3.86" .85 "2.33" 1.85 "6.36", nogrid) plotregion(style(none)) graphregion(color(white)) ///
+	aspect(0.8) name(figure_1, replace)	
+
+```
+
 ![figure_1](https://github.com/user-attachments/assets/11904739-2966-457a-850d-5c1dbf731e05)
 
 
